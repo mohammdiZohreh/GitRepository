@@ -230,7 +230,10 @@ namespace TesterIKBCM
             TestInfoClass.loadReportList();
 
         }
-
+        private void gitTest()
+        {
+            MessageBox.Show("Hello");
+        }
         private void loadForm_timer_Tick(object sender, EventArgs e)
         {
             initParams();
@@ -287,6 +290,7 @@ namespace TesterIKBCM
         private void inpB1_MouseHover(object sender, EventArgs e)
         {
             TB1.Show("Input_Board1", (TextBox)sender);
+            gitTest();
         }
         private void inpB2_MouseHover(object sender, EventArgs e)
         {
