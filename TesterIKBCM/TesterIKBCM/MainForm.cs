@@ -232,7 +232,7 @@ namespace TesterIKBCM
         }
         private void gitTest()
         {
-            MessageBox.Show("Hello");
+            MessageBox.Show("Test 1");
         }
         private void loadForm_timer_Tick(object sender, EventArgs e)
         {
