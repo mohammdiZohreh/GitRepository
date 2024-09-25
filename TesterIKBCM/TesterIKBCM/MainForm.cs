@@ -230,10 +230,7 @@ namespace TesterIKBCM
             TestInfoClass.loadReportList();
 
         }
-        private void gitTest()
-        {
-            MessageBox.Show("Test 2");
-        }
+        
         private void loadForm_timer_Tick(object sender, EventArgs e)
         {
             initParams();
@@ -290,7 +287,6 @@ namespace TesterIKBCM
         private void inpB1_MouseHover(object sender, EventArgs e)
         {
             TB1.Show("Input_Board1", (TextBox)sender);
-            gitTest();
         }
         private void inpB2_MouseHover(object sender, EventArgs e)
         {
@@ -394,6 +390,7 @@ namespace TesterIKBCM
                 {
                     serialCheck_timer.Stop();
                     btnConnect.BackColor = Color.Pink;
+                    serialConnectionCheck();  //Added
 
                 }
 
@@ -4713,7 +4710,7 @@ namespace TesterIKBCM
             autoTcounter = 0;
             PannelLock(false);
             feedbackPannel.BackColor = Color.Transparent;
-            btnConnect.BackColor = connectPanelColor;
+           // btnConnect.BackColor = connectPanelColor;
             feedbackTb.Text = "";
             progressBar1.Visible = false;
             //CheckSerialBox.Visible = true;
